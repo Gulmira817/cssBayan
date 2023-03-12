@@ -41,3 +41,27 @@ body {
     margin: 10px auto;
 
 }
+
+
+.container:hover .list li i{
+    
+    display: block;
+    cursor: pointer;
+}
+
+.container .list li:nth-of-type(n+3){
+    color: blue;    
+}
+.container:hover .list li:nth-of-type(n+3){
+    color: black;    
+}
+
+.container:hover{
+    
+    display: block;
+    cursor: pointer;
+}
+.container .list li i{
+    display: none;
+    
+}
