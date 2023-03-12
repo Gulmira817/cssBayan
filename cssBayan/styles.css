@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -24,6 +25,19 @@ body {
     display: block;
     margin: 0 auto;
 }
-/* .list:nth-child(2){
-    ba
-} */
+.list li{
+ display: flex;
+ flex-direction: column;
+ 
+}
+
+.text-icon-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.img {
+    margin: 10px auto;
+
+}
