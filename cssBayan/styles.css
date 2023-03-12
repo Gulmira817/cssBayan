@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+.container{
+    margin: 0px auto;
+    width: 600px;
+
+}
+
+.list li {
+     font-weight: bold;
+     list-style-type: none;
+     border-bottom: 1px solid gray;
+     padding-bottom: 20px;
+     padding-top: 20px;
+     font-size: 30px;
+     vertical-align: middle;
+     line-height: 30px;
+}
+
+.img-mem{
+    display: block;
+    margin: 0 auto;
+}
+/* .list:nth-child(2){
+    ba
+} */
