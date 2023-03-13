@@ -1,0 +1,138 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+.container{
+    margin: 0px auto;
+    width:50%;
+
+}
+
+.list li {
+     font-weight: bold;
+     list-style-type: none;
+     border-bottom: 1px solid gray;
+     padding-bottom: 20px;
+     padding-top: 20px;
+     font-size: 30px;
+     vertical-align: middle;
+     line-height: 30px;
+}
+
+
+.list li{
+ display: flex;
+ flex-direction: column;
+ 
+}
+
+.text-icon-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.img {
+    margin: 10px auto;
+    width: 50%;
+    height: 250px;
+
+}
+.container .list .list-item .img-clicked{
+    display: block;
+    color: black;
+
+}
+.collapse{
+    display: none;
+}
+
+.container:hover .list li i{
+    
+    display: block;
+    cursor: pointer;
+}
+
+.container .list li:nth-of-type(n+3){
+    color: blue;    
+}
+.container:hover .list li:nth-of-type(n+3){
+    color: black;    
+}
+
+.container:hover{
+    
+    display: block;
+    cursor: pointer;
+}
+.container .list li i{
+    display: none;
+    
+}
+
+.container .list-item:hover .collapse{
+ display: block;
+}
+.container .list-item:hover .text-icon-container{
+    color: black;
+}
+.container .list-item  a:not(.clicked-item)  {
+    color: blue;
+}
+
+a{
+    text-decoration: none;
+}
+a {
+    color: black;
+ } 
+   
+.container .list-item a:active .text-icon-container {
+        opacity: 0.6;
+        color: blue; 
+ }
+.container .list-item a:active > img {
+        opacity: 0.6;
+        color: blue; 
+ }
+@media only screen and (min-width: 320px) and (max-width: 568px){
+.container{
+    width: 100%;
+    margin: 0;
+}
+img{
+    width: 20%;
+    height:100px;
+}
+ul,li {
+    margin: 0;
+    padding: 0;
+}
+}
+@media only screen and (min-width: 1080px) and (max-width: 1920px){
+
+img{
+    width: 350px;
+    height:250px;
+}
+}
+
+@media (hover: hover) {
+.container:hover .list li i{  
+    display: block;
+    cursor: pointer;
+}
+
+.container:hover{  
+    display: block;
+    cursor: pointer;
+}
+.container .list-item:hover .collapse{
+ display: block;
+}
+.container .list-item:hover .text-icon-container{
+    color: black;
+}
+}
