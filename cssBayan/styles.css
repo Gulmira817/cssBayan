@@ -21,10 +21,7 @@ body {
      line-height: 30px;
 }
 
-.img-mem{
-    display: block;
-    margin: 0 auto;
-}
+
 .list li{
  display: flex;
  flex-direction: column;
@@ -41,7 +38,14 @@ body {
     margin: 10px auto;
 
 }
+.container .list .list-item .img-clicked{
+    display: block;
+    color: black;
 
+}
+.collapse{
+    display: none;
+}
 
 .container:hover .list li i{
     
@@ -65,3 +69,29 @@ body {
     display: none;
     
 }
+
+.container .list-item:hover .collapse{
+ display: block;
+}
+.container .list-item:hover .text-icon-container{
+    color: black;
+}
+.container .list-item  a:not(.clicked-item)  {
+    color: blue;
+}
+
+a{
+    text-decoration: none;
+}
+a {
+    color: black;
+ } 
+   
+.container .list-item a:active .text-icon-container {
+        opacity: 0.6;
+        color: blue; 
+ }
+.container .list-item a:active > img {
+        opacity: 0.6;
+        color: blue; 
+ }
