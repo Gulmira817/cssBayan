@@ -6,7 +6,7 @@ body {
 }
 .container{
     margin: 0px auto;
-    width: 600px;
+    width:50%;
 
 }
 
@@ -36,6 +36,8 @@ body {
 
 .img {
     margin: 10px auto;
+    width: 50%;
+    height: 250px;
 
 }
 .container .list .list-item .img-clicked{
@@ -95,3 +97,42 @@ a {
         opacity: 0.6;
         color: blue; 
  }
+@media only screen and (min-width: 320px) and (max-width: 568px){
+.container{
+    width: 100%;
+    margin: 0;
+}
+img{
+    width: 20%;
+    height:100px;
+}
+ul,li {
+    margin: 0;
+    padding: 0;
+}
+}
+@media only screen and (min-width: 1080px) and (max-width: 1920px){
+
+img{
+    width: 350px;
+    height:250px;
+}
+}
+
+@media (hover: hover) {
+.container:hover .list li i{  
+    display: block;
+    cursor: pointer;
+}
+
+.container:hover{  
+    display: block;
+    cursor: pointer;
+}
+.container .list-item:hover .collapse{
+ display: block;
+}
+.container .list-item:hover .text-icon-container{
+    color: black;
+}
+}
